@@ -526,7 +526,9 @@ GtkWidget *SetupWebview(void *contentManager, GtkWindow *window, int hideWindowO
     }
 
     WebKitSettings *settings = webkit_web_view_get_settings(WEBKIT_WEB_VIEW(webview));
-    webkit_settings_set_user_agent_with_application_details(settings, "wails.io", "");
+    // webkit_settings_set_user_agent_with_application_details(settings, "wails.io", "");
+      // webkit_settings_set_user_agent_with_application_details(settings, "wails.io", "");
+    webkit_settings_set_user_agent_with_application_details(settings, "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1", "");
 
     switch (gpuPolicy)
     {
