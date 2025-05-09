@@ -4,6 +4,7 @@
 package cfd
 
 import (
+	"fmt"
 	"github.com/go-ole/go-ole"
 	"syscall"
 	"unsafe"
